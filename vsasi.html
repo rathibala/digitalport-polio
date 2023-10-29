@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Your Name - portfolio</title>
+   <style>
+      body {
+           font-family: arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #4a5b08;
+        } 
+
+        header{
+            background-color: rgb(141, 72, 30);
+            color: #170e50;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+          font-size: 2.5rem;
+        }
+ 
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 30px; /* Adjust top position as needed */
+            left: 70px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: rgb(214, 22, 22);
+            color: #000000;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ba0b0b;
+        }
+
+        .section-content{
+            background-color: #d73030;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #b40f0f;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color: rgb(220, 103, 35);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #330a0a;
+        }
+
+        ul {
+            list-style-type: lower-alpha;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <!-- Add your profile picture here -->
+          <img src="sasi.img.jpg" alt="Your Profile picture" class="profile-picture">
+          <h1>Sasikala B</h1>
+        </div>
+   </header> 
+
+    <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#extracurricular activity">Extracurricular Activities</a></li>
+          <li><a href="#project">Project</a></li>
+        </ul>
+
+    </nav>
+    <section id="about">
+         <div class="section-content">
+         <h2>About Me</h2>
+         <p>Hello Everyone! This is Sasikala. I am final year Computer Science Student.</p>
+    </div>
+    </section>
+         <section id="education">
+         <div class="section-content">
+         <h2>Education</h2>
+
+        <ul>
+         <li> School Name: MMA Higher Secondary School </li>
+         <li> 12th mark: 500 </li>
+         <li> College name: Bon Secource College For Women</li>
+         <li> SGPA: 90% </li>
+         <li> Programming Languages: Python,Java,C,C++</li>
+         <li> Value Addon Course: Carrer development English,Hardware security,asb.NET</li>
+         <li> Additional course: Typing for English,Generative AI from MSME in Delhi </li>
+    </section> 
+
+    <section id="Skills">
+         <div class="section-content">
+         <h2>Skills</h2>
+
+        <ul>
+         <li>ms-excel</li>
+         <li>ms-word</li>
+         <li>ms-ppt</li>
+         <li>Editing(Text,Images,,coloring effects)</li>
+        </ul>
+
+         </div>
+    </section>
+         <section id="Extracurricular Activities">
+         <div class="section-content">
+         <h2>Extracurricular Activities</h2>
+       <ul>
+         <li> Dancing </li>
+         <li> Write Tamil Poems(Kavithai)</li>
+       </ul>
+         </div>
+    </section> 
+
+    <section id="Project">
+         <div class="section-content"> 
+         <h2>Project</h2>
+         <a href="vsasi.html">Project</a>
+         </div> 
+    </section> 
+<center>
+          
+</center>
+    </section>
+    
+    <footer>
+         <p>&copy;Sasikala</p>
+    </footer>
+   </header>
+<script>
+         doucument.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+         anchor.addEvenListeber('click',
